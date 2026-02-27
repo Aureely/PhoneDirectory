@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(63, 98, 104);
+}
+
+h1 {
+  color: rgb(178, 199, 204);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(178, 199, 204);
+
+}
+
+ul {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:rgb(220, 238, 241);
+  text-align:center;
+  border: 2px solid rgb(114, 177, 187);
+  padding: 25px;
+  background-color: rgb(54, 98, 109);
+  list-style:none;
+  
+}
+
+div {
+   background-color: rgb(38, 69, 77); 
+   padding: 0.2em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form-box {
+  width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgb(38, 69, 77);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.form-box button {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  padding: 8px;
+  font-size: 18px;
+  background-color: rgb(126, 178, 182);
+}
+
+.form-box input {
+
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  padding: 8px;
+  font-size: 18px;
+
+
+}
+
+

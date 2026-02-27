@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puhelinluettelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Puhelinluettelo</h1>
+
+        <button id="allinfo">Kaikki tiedot</button>
+        <button id="numfetch">Etsi puhelinnumero</button>
+
+    </div>
+    <script>
+        // koodi toiselle sivulle siirtymiseen
+        $("#numfetch").click(function () {
+            window.location.href = "search.html";
+        });
+
+        // takaisin etusivulle
+        $("#allinfo").click(function () {
+            window.location.href = "directory.html";
+        });
+
+        $(document).ready(function () {
+            // FETCHING DATA FROM JSON FILE 
+            $.getJSON("http://localhost:3000/data", function (data) {
+
+                // lista, johon tallennetaan tiedot
+                var list = [];
+                // lisätään JSON tiedot listaan
+                $.each(data, function (key, val) {
+                    list.push(`<li>${val.nimi} ${val.puhelin}</li>`);
+
+                });
+                // viedään lista html:ään
+                $("#dataList").html(list.join(""));
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>
